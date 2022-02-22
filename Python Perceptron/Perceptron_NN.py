@@ -62,7 +62,7 @@ def train():
 
       weights[0] = weights[0] + (LEARNING_RATE * float(error) * float(trainData[x][0]))
       weights[1] = weights[1] + (LEARNING_RATE * float(error) * float(trainData[x][1]))
-      weights[0] = weights[0] + (LEARNING_RATE * float(error))
+      weights[2] = weights[2] + (LEARNING_RATE * float(error))
 
       iterationError = iterationError + (error * error)
 
